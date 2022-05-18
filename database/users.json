@@ -8,5 +8,6 @@
     "userName": "factory manager",
     "password": "go",
     "type": "factory_manager"
-  }
+  },
+  { "userName": "test1", "password": "test1", "type": "agency_boss" }
 ]

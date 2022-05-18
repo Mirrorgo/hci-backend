@@ -54,6 +54,41 @@ app.post("/", function (req, res) {
     res.send(matchedAccount);
   });
 });
+app.post("/register", function (req, res) {
+  const { userName, password, type } = req.body;
+  fs.readFile("./database/users.json", (err, data) => {
+    if (err) {
+      console.error(err);
+    }
+    const users = JSON.parse(data.toString());
+    const hasUser = users.some((cur) => {
+      if (cur.userName === userName) {
+        return true;
+      }
+      return false;
+    });
+    if (hasUser) {
+      res.send("false");
+    } else {
+      res.send("true");
+      //写currentUser文件
+      const content = JSON.stringify([
+        ...users,
+        {
+          userName,
+          password,
+          type,
+        },
+      ]);
+      fs.writeFile("./database/users.json", content, (err) => {
+        if (err) {
+          console.error(err);
+          return;
+        }
+      });
+    }
+  });
+});
 
 let server = app.listen(8081, "localhost", function () {
   const { address, port } = server.address();
