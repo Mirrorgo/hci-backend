@@ -90,7 +90,7 @@ app.post("/register", function (req, res) {
   });
 });
 
-let server = app.listen(8081, "localhost", function () {
+let server = app.listen(8081, "127.0.0.1", function () {
   const { address, port } = server.address();
   console.log(server.address());
   console.log("应用实例，访问地址为 http://%s:%s", address, port);
