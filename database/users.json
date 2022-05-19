@@ -1,13 +1,1 @@
-[
-  { "userName": "test", "password": "test", "type": "test" },
-  { "userName": "jxslb", "password": "123456", "type": "agency_boss" },
-  { "userName": "jxsyg", "password": "123456", "type": "agency_employee" },
-  { "userName": "gtsh", "password": "123456", "type": "businessman" },
-  { "userName": "sccs", "password": "123456", "type": "manufacturer" },
-  {
-    "userName": "factory manager",
-    "password": "go",
-    "type": "factory_manager"
-  },
-  { "userName": "test1", "password": "test1", "type": "agency_boss" }
-]
+[{"userName":"test","password":"test","type":"test"},{"userName":"jxslb","password":"123456","type":"agency_boss"},{"userName":"jxsyg","password":"123456","type":"agency_employee"},{"userName":"gtsh","password":"123456","type":"businessman"},{"userName":"sccs","password":"123456","type":"manufacturer"},{"userName":"factory manager","password":"go","type":"factory_manager"},{"userName":"test1","password":"test1","type":"agency_boss"},{"userName":"test2","password":"123","type":"agency_boss"},{"userName":"boss","password":"123","type":"agency_boss"},{"userName":"sccstest","password":"123","type":"manufacturer"},{"userName":"bigboss","password":"123","type":"agency_boss"}]

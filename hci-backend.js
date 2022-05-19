@@ -17,6 +17,7 @@ auth/loginUser
   - type:add(添加users到数据库)
 */
 app.get("/", function (req, res) {
+  console.log(req.body, "request");
   fs.readFile("./database/currentUser.json", (err, data) => {
     if (err) {
       console.error(err);
